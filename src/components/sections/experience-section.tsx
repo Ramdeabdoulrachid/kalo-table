@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Briefcase, Calendar, Sparkles, Users, Utensils } from "lucide-react";
 import { ScrollReveal } from "@/components/motion/scroll-reveal";
+import { withBasePath } from "@/lib/utils";
 
 const MOMENTS = [
   {
@@ -93,7 +94,7 @@ export function ExperienceSection() {
               <div className="relative overflow-hidden rounded-[2rem] border border-[#E8E0D4] bg-[#FFFDF9] p-3 shadow-xl">
                 <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[1.5rem] bg-[#F0E9DD]">
                   <Image
-                    src="/images/riz-gras.jpg"
+                    src={withBasePath("/images/riz-gras.jpg")}
                     alt="Table conviviale garnie de riz gras, poisson grillé et brochettes à partager"
                     fill
                     sizes="(max-width: 768px) 100vw, 480px"

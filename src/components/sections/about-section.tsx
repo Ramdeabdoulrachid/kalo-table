@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Flame, HeartHandshake, Leaf, Utensils } from "lucide-react";
 import { ScrollReveal } from "@/components/motion/scroll-reveal";
+import { withBasePath } from "@/lib/utils";
 
 const VALUES = [
   {
@@ -105,7 +106,7 @@ export function AboutSection() {
                 {/* Photographie principale */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-[#E8E0D4] bg-[#F0E9DD] shadow-xl sm:aspect-[4/5] sm:w-[86%] sm:rounded-[2rem]">
                   <Image
-                    src="/images/poulet-yassa.jpg"
+                    src={withBasePath("/images/poulet-yassa.jpg")}
                     alt="Dressage contemporain du Poulet Yassa aux oignons caramélisés et citron vert"
                     fill
                     sizes="(max-width: 768px) 100vw, 520px"
@@ -117,7 +118,7 @@ export function AboutSection() {
                 <div className="mt-3 flex items-center gap-3.5 overflow-hidden rounded-2xl border border-[#E8E0D4] bg-[#FFFDF9] p-2.5 shadow-lg sm:absolute sm:-right-2 sm:bottom-8 sm:mt-0 sm:block sm:w-64 sm:rounded-3xl sm:border-4 sm:border-[#F8F5EF] sm:p-0 sm:shadow-2xl">
                   <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-xl sm:aspect-[4/3] sm:h-auto sm:w-full sm:rounded-none">
                     <Image
-                      src="/images/table-partage.jpg"
+                      src={withBasePath("/images/table-partage.jpg")}
                       alt="Salle chaleureuse et lumineuse de KALO TABLE"
                       fill
                       sizes="(max-width: 640px) 80px, 260px"

@@ -18,6 +18,7 @@ import { restaurantConfig } from "@/config/restaurant";
 import { menuItems } from "@/data/menu";
 import { useCart } from "@/hooks/use-cart";
 import { formatFcfa } from "@/lib/currency";
+import { withBasePath } from "@/lib/utils";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -257,7 +258,7 @@ export function HeroSection() {
               <div className="hero-MainImage hero-parallax-main relative overflow-hidden rounded-3xl border border-[#E8E0D4] bg-[#FFFDF9] shadow-[0_20px_50px_rgb(41,37,31,0.12)] sm:rounded-[2rem]">
                 <div className="relative aspect-[4/3] w-full sm:aspect-[5/4]">
                   <Image
-                    src="/images/poulet-bicyclette.jpg"
+                    src={withBasePath("/images/poulet-bicyclette.jpg")}
                     alt="Poulet bicyclette braisé, alloco doré et condiments frais chez KALO TABLE à Bobo-Dioulasso"
                     fill
                     priority
@@ -328,7 +329,7 @@ export function HeroSection() {
               >
                 <div className="relative h-14 w-18 shrink-0 overflow-hidden rounded-xl sm:h-16 sm:w-20">
                   <Image
-                    src="/images/poisson-braise.jpg"
+                    src={withBasePath("/images/poisson-braise.jpg")}
                     alt="Poisson braisé et attiéké"
                     fill
                     sizes="96px"

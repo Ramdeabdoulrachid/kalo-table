@@ -1,4 +1,5 @@
 import { CategoryOption, MenuItem } from "@/types";
+import { withBasePath } from "@/lib/utils";
 
 export const menuCategories: CategoryOption[] = [
   {
@@ -49,7 +50,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Des rondelles de banane plantain mûre sélectionnées pour leur douceur naturelle, frites jusqu'à obtenir une robe caramélisée et un cœur fondant. Accompagnées d'un condiment maison aux tomates fraîches, oignons ciselés et piment doux à doser selon votre envie.",
     price: 1000,
-    image: "/images/poulet-bicyclette.jpg",
+    image: withBasePath("/images/poulet-bicyclette.jpg"),
     imageAlt: "Assiette d'alloco doré et croustillant avec condiment tomate",
     ingredients: [
       "Bananes plantains mûres",
@@ -74,7 +75,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Une pâte fine pliée à la main et dorée minute, renfermant une farce savoureuse au bœuf haché, ail, gingembre frais, persil et oignons verts. Servis chauds avec une sauce acidulée pour un début de repas plein de caractère.",
     price: 1500,
-    image: "/images/alloco-samoussas.jpg",
+    image: withBasePath("/images/alloco-samoussas.jpg"),
     imageAlt: "Samoussas dorés au bœuf épicé et herbes fraîches",
     ingredients: [
       "Feuilles de blé croustillantes",
@@ -101,7 +102,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Véritable institution culinaire au Burkina Faso, notre poulet bicyclette est longuement massé avec une marinade d'ail, gingembre, poivre de Guinée et herbes aromatiques, puis braisé sur braise ardente. Sa chair ferme et goûteuse s'accompagne d'oignons sautés, d'alloco doré et d'une sauce relevée.",
     price: 4000,
-    image: "/images/poulet-bicyclette.jpg",
+    image: withBasePath("/images/poulet-bicyclette.jpg"),
     imageAlt: "Poulet bicyclette braisé au feu de bois servi avec oignons, alloco et herbes",
     ingredients: [
       "Poulet local fermier (poulet bicyclette)",
@@ -126,7 +127,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Un grand classique de nos tables familiales revisité avec soin : chaque grain de riz absorbe un bouillon mijoté aux tomates mûres, ail, laurier et légumes du marché, couronné de généreux morceaux de bœuf tendrement braisés.",
     price: 3000,
-    image: "/images/riz-gras.jpg",
+    image: withBasePath("/images/riz-gras.jpg"),
     imageAlt: "Riz gras au bœuf mijoté aux légumes et tomates fraîches",
     ingredients: [
       "Riz long grain parfumé",
@@ -151,7 +152,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Un équilibre vibrant entre la douceur des oignons longuement compotés et la fraîcheur acidulée du citron vert. Le poulet, d'abord saisi sur la braise pour conserver son fumet, finit sa cuisson dans cette sauce onctueuse servie avec un riz blanc parfumé.",
     price: 3500,
-    image: "/images/poulet-yassa.jpg",
+    image: withBasePath("/images/poulet-yassa.jpg"),
     imageAlt: "Poulet yassa aux oignons caramélisés et citron vert accompagné de riz",
     ingredients: [
       "Cuisses et hauts de cuisse de poulet",
@@ -176,7 +177,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Hommage à la gastronomie burkinabè : notre tô est travaillé avec patience pour une texture lisse et aérienne, dressé avec élégance aux côtés d'une sauce gombo verte, parfumée au soumbala doux et enrichie de morceaux de bœuf fondants.",
     price: 2500,
-    image: "/images/to-sauce-gombo.jpg",
+    image: withBasePath("/images/to-sauce-gombo.jpg"),
     imageAlt: "Tô burkinabè servi avec une sauce gombo fraîche et viande mijotée",
     ingredients: [
       "Farine de mil / maïs sélectionnée",
@@ -203,7 +204,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Un poisson entier choisi pour sa fraîcheur, entaillé et parfumé d'une pâte d'herbes, d'ail et de gingembre avant d'être grillé sur braise. Servi avec une semoule de manioc (attiéké) aérienne et un condiment croquant aux tomates, oignons et citron.",
     price: 4500,
-    image: "/images/poisson-braise.jpg",
+    image: withBasePath("/images/poisson-braise.jpg"),
     imageAlt: "Poisson entier braisé accompagné d'attiéké et de légumes frais",
     ingredients: [
       "Poisson entier frais mariné",
@@ -228,7 +229,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Des cubes de bœuf soigneusement parés, marinés à l'huile parfumée et relevés d'un mélange maison d'arachides torréfiées et d'épices douces (inspiré du kankankan / suya), grillés minute sur la braise et servis avec oignons rouges croquants.",
     price: 3500,
-    image: "/images/brochettes-boeuf.jpg",
+    image: withBasePath("/images/brochettes-boeuf.jpg"),
     imageAlt: "Brochettes de bœuf grillées aux épices kankankan et oignons rouges",
     ingredients: [
       "Filet de bœuf sélectionné",
@@ -254,7 +255,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Préparé chaque matin à partir de calices d'hibiscus sabdariffa infusés lentement avec des feuilles de menthe fraîche et une pointe de fleur d'oranger. Peu sucré, désaltérant et d'une robe rubis intense.",
     price: 700,
-    image: "/images/boissons-naturelles.jpg",
+    image: withBasePath("/images/boissons-naturelles.jpg"),
     imageAlt: "Verre de jus de bissap glacé à la menthe fraîche",
     ingredients: [
       "Fleurs d'hibiscus rouge (bissap)",
@@ -277,7 +278,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Une boisson vivifiante au caractère franc : racines de gingembre frais pressées à froid, équilibrées par la rondeur du jus d'ananas mûr et le zeste de citron vert. Idéal pour accompagner nos grillades au feu de bois.",
     price: 700,
-    image: "/images/boissons-naturelles.jpg",
+    image: withBasePath("/images/boissons-naturelles.jpg"),
     imageAlt: "Carafe de jus de gingembre frais et citron vert",
     ingredients: [
       "Rhizomes de gingembre frais",
@@ -300,7 +301,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "La pulpe de tamarin macérée et filtrée avec soin offre une texture soyeuse et une fraîcheur fruitée incomparable, entre douceur miellée et vivacité acidulée.",
     price: 700,
-    image: "/images/boissons-naturelles.jpg",
+    image: withBasePath("/images/boissons-naturelles.jpg"),
     imageAlt: "Verre de jus de tamarin frais ambré",
     ingredients: [
       "Pulpe de tamarin naturel",
@@ -325,7 +326,7 @@ export const menuItems: MenuItem[] = [
     fullDescription:
       "Le dessert emblématique des tables ouest-africaines : des grains de petit mil cuits à la vapeur pour rester tendres et légers, mariés à un lait fermenté et yaourt brassé onctueux, subtilement parfumé à la vanille et à la fleur d'oranger.",
     price: 1000,
-    image: "/images/degue.jpg",
+    image: withBasePath("/images/degue.jpg"),
     imageAlt: "Coupe de dèguè crémeux au petit mil et yaourt vanillé",
     ingredients: [
       "Couscous de petit mil roulé à la main",
