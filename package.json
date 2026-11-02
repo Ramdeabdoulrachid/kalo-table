@@ -1,0 +1,36 @@
+{
+  "name": "kalo-table",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KALO TABLE — Restaurant de cuisine africaine contemporaine à Bobo-Dioulasso (Concept par Ramde Studio)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@hookform/resolvers": "^5.0.1",
+    "clsx": "^2.1.1",
+    "gsap": "^3.12.7",
+    "lucide-react": "^1.16.0",
+    "motion": "^12.6.3",
+    "next": "^15.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.56.0",
+    "sonner": "^2.0.3",
+    "tailwind-merge": "^3.2.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.3",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.3",
+    "typescript": "^5.8.3"
+  }
+}
+
